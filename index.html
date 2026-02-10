@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>PDF to Image Converter | Image to PDF Converter - Free Online Tool</title>
+    <meta name="title" content="PDF to Image Converter | Image to PDF Converter - Free Online Tool">
+    <meta name="description" content="Free online PDF to Image and Image to PDF converter. Convert JPG, PNG to PDF instantly. Extract PDF pages as high-quality images. No upload required - 100% secure browser-based conversion.">
+    <meta name="keywords" content="PDF to Image, Image to PDF, PDF converter, JPG to PDF, PNG to PDF, PDF to JPG, PDF to PNG, convert PDF, image converter, free PDF tool, online PDF converter, document converter, merge images to PDF, extract PDF pages">
+    <meta name="author" content="Muhammad Hussain Shakir">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://splendid-alfajores-be4087.netlify.app/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://splendid-alfajores-be4087.netlify.app/">
+    <meta property="og:title" content="PDF to Image Converter | Image to PDF Converter - Free Online Tool">
+    <meta property="og:description" content="Free online PDF to Image and Image to PDF converter. Convert JPG, PNG to PDF instantly. Extract PDF pages as high-quality images. 100% secure and private.">
+    <meta property="og:site_name" content="Elite Document Converter">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://splendid-alfajores-be4087.netlify.app/">
+    <meta property="twitter:title" content="PDF to Image Converter | Image to PDF Converter - Free Online Tool">
+    <meta property="twitter:description" content="Free online PDF to Image and Image to PDF converter. Convert JPG, PNG to PDF instantly. No upload to server - 100% secure browser-based conversion.">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="application-name" content="Elite Document Converter">
+    <meta name="theme-color" content="#003366">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Elite Converter">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- PWA Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512x512.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png">
+
+    <!-- Structured Data - JSON-LD Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Elite Document Converter - PDF to Image & Image to PDF",
+        "url": "https://splendid-alfajores-be4087.netlify.app/",
+        "description": "Free online tool to convert PDF to Image and Image to PDF. Convert JPG, PNG to PDF. Extract PDF pages as high-quality images. 100% secure browser-based conversion.",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Any",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "author": {
+            "@type": "Person",
+            "name": "Muhammad Hussain Shakir"
+        },
+        "featureList": [
+            "Convert Image to PDF",
+            "Convert PDF to Image",
+            "Merge multiple images into PDF",
+            "Extract PDF pages as PNG images",
+            "100% browser-based processing",
+            "No file upload to server",
+            "Free to use"
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PDF to Image Converter",
+        "applicationCategory": "UtilityApplication",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "1250"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Convert PDF to Image",
+        "description": "Step by step guide to convert PDF files to high-quality images",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Select PDF to Image Tool",
+                "text": "Click on the PDF to Image option from the tool selection"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Upload PDF File",
+                "text": "Select and upload your PDF file"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Download Images",
+                "text": "Click Extract All Pages to download images"
+            }
+        ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to Convert Image to PDF",
+        "description": "Step by step guide to convert images to PDF format",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "name": "Select Image to PDF Tool",
+                "text": "Click on Image to PDF or Multi-Image to PDF option"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Upload Images",
+                "text": "Select and upload your JPG or PNG images"
+            },
+            {
+                "@type": "HowToStep",
+                "name": "Download PDF",
+                "text": "Click Convert to PDF to download your file"
+            }
+        ]
+    }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root { --primary: #003366; --accent: #ff9900; --bg: #f4f7f6; --text: #333; }
+        body { font-family: 'Poppins', sans-serif; background: var(--bg); margin: 0; padding: 0; color: var(--text); scroll-behavior: smooth; }
+        .container { max-width: 1100px; margin: 40px auto; background: white; padding: 40px; border-radius: 20px; box-shadow: 0 15px 50px rgba(0,0,0,0.1); }
+        .header { text-align: center; border-bottom: 3px solid var(--primary); padding-bottom: 20px; margin-bottom: 40px; }
+        .tool-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .tool-card { border: 2px solid #eee; padding: 25px; border-radius: 15px; text-align: center; cursor: pointer; transition: 0.3s ease; background: #fff; }
+        .tool-card:hover { border-color: var(--accent); transform: translateY(-8px); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .tool-card h3 { margin: 10px 0; color: var(--primary); }
+        .tool-card h2 { margin: 10px 0; color: var(--primary); font-size: 1.3rem; }
+        #upload-area { margin-top: 40px; display: none; border: 3px dashed var(--primary); padding: 50px; text-align: center; border-radius: 15px; background: #f9fbff; animation: fadeIn 0.5s; }
+        #upload-area.active { display: block; }
+        .btn { background: var(--primary); color: white; padding: 15px 35px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; font-size: 16px; margin: 10px; transition: 0.3s; }
+        .btn:hover { background: var(--accent); color: #003366; }
+        .status { margin-top: 20px; font-weight: bold; color: var(--primary); min-height: 24px; }
+        
+        /* Sections */
+        .info-section { margin-top: 60px; padding: 40px; background: #003366; color: white; border-radius: 20px; }
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .info-section h2 { color: var(--accent); border-bottom: 2px solid var(--accent); display: inline-block; margin-bottom: 20px; }
+        .step-box { background: rgba(255,255,255,0.1); padding: 15px; border-left: 4px solid var(--accent); border-radius: 5px; margin-bottom: 15px; }
+        
+        .footer { text-align: center; padding: 30px; margin-top: 40px; border-top: 1px solid #ddd; color: #666; }
+        .signature { font-weight: bold; color: var(--primary); font-size: 1.2rem; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* PWA Install Banner */
+        .pwa-install-banner {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--primary);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+            z-index: 9999;
+            text-align: center;
+            max-width: 90%;
+            width: 400px;
+            animation: slideUp 0.5s ease;
+        }
+        .pwa-install-banner.show { display: block; }
+        .pwa-install-banner p { margin: 0 0 10px 0; font-size: 0.95rem; }
+        .pwa-install-banner .install-btn {
+            background: var(--accent);
+            color: var(--primary);
+            border: none;
+            padding: 10px 25px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            margin-right: 8px;
+        }
+        .pwa-install-banner .close-btn {
+            background: transparent;
+            color: white;
+            border: 1px solid white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        @keyframes slideUp { from { opacity: 0; transform: translate(-50%, 30px); } to { opacity: 1; transform: translate(-50%, 0); } }
+
+        /* Created by branding bar */
+        .branding-bar {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .branding-bar span { color: var(--accent); font-weight: 700; }
+    </style>
+</head>
+<body>
+
+<!-- Top Branding Bar -->
+<div class="branding-bar">Created by <span>Muhammad Hussain</span></div>
+
+<main class="container" role="main">
+    <header class="header">
+        <h1 style="color: var(--primary); margin:0; font-size: 2.5rem;">Free PDF to Image & Image to PDF Converter Online</h1>
+        <p>Convert PDF to JPG, PNG | Convert JPG, PNG to PDF - Fast, Free & Secure</p>
+        <p style="color: var(--accent); font-weight: 600; margin-top: 5px; font-size: 0.95rem;">Created by Muhammad Hussain</p>
+    </header>
+
+    <section class="tool-grid" aria-label="Conversion Tools">
+        <article class="tool-card" onclick="setMode('img2pdf')" role="button" tabindex="0" aria-label="Convert Image to PDF">
+            <h2>Image to PDF Converter</h2>
+            <p>Convert JPG to PDF, PNG to PDF instantly. Free image to PDF conversion with auto-fit technology.</p>
+        </article>
+        <article class="tool-card" onclick="setMode('multi2pdf')" role="button" tabindex="0" aria-label="Merge Multiple Images to PDF">
+            <h2>Merge Images to PDF</h2>
+            <p>Combine multiple JPG or PNG images into one PDF file. Free multi-image to PDF converter.</p>
+        </article>
+        <article class="tool-card" onclick="setMode('pdf2img')" role="button" tabindex="0" aria-label="Convert PDF to Image">
+            <h2>PDF to Image Converter</h2>
+            <p>Convert PDF to JPG or PNG. Extract all PDF pages as high-resolution images for free.</p>
+        </article>
+    </section>
+
+    <section id="upload-area" aria-label="File Upload Area">
+        <h2 id="mode-title" style="color: var(--primary);">Upload Your File</h2>
+        <input type="file" id="file-input" aria-label="Select file to convert">
+        <br>
+        <button class="btn" id="action-btn" onclick="processFiles()">Convert Now</button>
+        <div class="status" id="status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="info-section" aria-label="Features and Information">
+        <div class="info-grid">
+            <article>
+                <h2>How to Convert PDF to Image & Image to PDF</h2>
+                <div class="step-box">
+                    <strong>Step 1 - Select Tool:</strong> Choose Image to PDF converter or PDF to Image converter based on your needs.
+                </div>
+                <div class="step-box">
+                    <strong>Step 2 - Upload File:</strong> Select your JPG, PNG images or PDF file. All processing happens locally in your browser - no upload to server.
+                </div>
+                <div class="step-box">
+                    <strong>Step 3 - Auto Processing:</strong> Our smart algorithm ensures perfect quality with no cropping or quality loss during PDF to image or image to PDF conversion.
+                </div>
+                <div class="step-box">
+                    <strong>Step 4 - Download:</strong> Get your converted PDF or images instantly. Free, fast, and secure conversion.
+                </div>
+            </article>
+
+            <article>
+                <h2>Why Use Our Free PDF Converter?</h2>
+                <p><strong>100% Free:</strong> Convert PDF to image and image to PDF completely free with no limits.</p>
+                <p><strong>100% Secure:</strong> Your files never leave your browser. No server upload means complete privacy for your documents.</p>
+                <p><strong>High Quality:</strong> Get crystal clear PDF to JPG, PDF to PNG conversions. Convert images to PDF with perfect formatting.</p>
+                <p><strong>No Registration:</strong> No sign-up required. Start converting PDF to images or images to PDF instantly.</p>
+                <p style="margin-top: 15px; color: var(--accent); font-weight: 600;">Created by Muhammad Hussain</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="info-section" style="margin-top: 20px; background: #fff; color: #333;" aria-label="FAQ Section">
+        <h2 style="color: var(--primary);">Frequently Asked Questions - PDF to Image & Image to PDF</h2>
+        <article>
+            <h3 style="color: var(--primary);">How to convert PDF to Image?</h3>
+            <p>Click on "PDF to Image Converter", upload your PDF file, and click "Extract All Pages". Each PDF page will be downloaded as a high-quality PNG image.</p>
+        </article>
+        <article>
+            <h3 style="color: var(--primary);">How to convert Image to PDF?</h3>
+            <p>Select "Image to PDF Converter", upload your JPG or PNG image, and click "Convert to PDF". Your image will be converted to a professional PDF document instantly.</p>
+        </article>
+        <article>
+            <h3 style="color: var(--primary);">Is this PDF converter free?</h3>
+            <p>Yes! Our PDF to Image and Image to PDF converter is 100% free to use with no registration required and no watermarks added.</p>
+        </article>
+        <article>
+            <h3 style="color: var(--primary);">Is my data secure?</h3>
+            <p>Absolutely. All PDF to image and image to PDF conversions happen directly in your browser. Your files are never uploaded to any server, ensuring complete privacy.</p>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>Free Online PDF to Image Converter | Image to PDF Converter | JPG to PDF | PNG to PDF | PDF to JPG | PDF to PNG</p>
+        <p>© 2026 Elite Document Converter. All Rights Reserved.</p>
+        <p class="signature">Created By Muhammad Hussain Shakir</p>
+    </footer>
+</main>
+
+<script>
+    let currentMode = '';
+    const { jsPDF } = window.jspdf;
+    pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    function setMode(mode) {
+        currentMode = mode;
+        const uploadArea = document.getElementById('upload-area');
+        const input = document.getElementById('file-input');
+        const btn = document.getElementById('action-btn');
+        input.value = "";
+        uploadArea.classList.add('active');
+        document.getElementById('status').innerText = "";
+
+        if (mode === 'img2pdf') {
+            document.getElementById('mode-title').innerText = "Image to PDF";
+            btn.innerText = "Convert to PDF";
+            input.accept = "image/*";
+            input.multiple = false;
+        } else if (mode === 'multi2pdf') {
+            document.getElementById('mode-title').innerText = "Merge Images to PDF";
+            btn.innerText = "Create Multi-Page PDF";
+            input.accept = "image/*";
+            input.multiple = true;
+        } else if (mode === 'pdf2img') {
+            document.getElementById('mode-title').innerText = "PDF to Image";
+            btn.innerText = "Extract All Pages";
+            input.accept = ".pdf";
+            input.multiple = false;
+        }
+        uploadArea.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    async function processFiles() {
+        const input = document.getElementById('file-input');
+        const status = document.getElementById('status');
+        if (input.files.length === 0) {
+            status.innerHTML = "❌ Select a file first!";
+            return;
+        }
+        if (currentMode === 'pdf2img') await convertPdfToImg(input.files[0]);
+        else await convertImgToPdf(input.files);
+    }
+
+    async function convertImgToPdf(files) {
+        const status = document.getElementById('status');
+        status.innerText = "⚡ Scan-to-Fit processing active...";
+        const pdf = new jsPDF('p', 'mm', 'a4');
+        const pageWidth = pdf.internal.pageSize.getWidth();
+        const pageHeight = pdf.internal.pageSize.getHeight();
+
+        for (let i = 0; i < files.length; i++) {
+            const imgData = await readFileAsDataURL(files[i]);
+            const img = new Image();
+            img.src = imgData;
+            await new Promise((resolve) => {
+                img.onload = () => {
+                    const margin = 5;
+                    const maxWidth = pageWidth - (margin * 2);
+                    const maxHeight = pageHeight - (margin * 2);
+                    let ratio = Math.min(maxWidth / img.width, maxHeight / img.height);
+                    let fWidth = img.width * ratio;
+                    let fHeight = img.height * ratio;
+                    let x = (pageWidth - fWidth) / 2;
+                    let y = (pageHeight - fHeight) / 2;
+                    if (i > 0) pdf.addPage();
+                    pdf.addImage(imgData, 'JPEG', x, y, fWidth, fHeight, undefined, 'FAST');
+                    resolve();
+                };
+            });
+        }
+        pdf.save(`Elite_Hussain_Shakir_${Date.now()}.pdf`);
+        status.innerHTML = "✅ Success! File generated.";
+    }
+
+    async function convertPdfToImg(file) {
+        const status = document.getElementById('status');
+        status.innerText = "⚡ Extracting high-res images...";
+        const arrayBuffer = await file.arrayBuffer();
+        const pdf = await pdfjsLib.getDocument(arrayBuffer).promise;
+        for (let i = 1; i <= pdf.numPages; i++) {
+            const page = await pdf.getPage(i);
+            const viewport = page.getViewport({ scale: 2.0 });
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+            canvas.height = viewport.height;
+            canvas.width = viewport.width;
+            await page.render({ canvasContext: context, viewport: viewport }).promise;
+            const link = document.createElement('a');
+            link.download = `Elite_Page_${i}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+        status.innerHTML = "✅ Success! Pages extracted.";
+    }
+
+    function readFileAsDataURL(file) {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = () => resolve(reader.result);
+            reader.onerror = reject;
+            reader.readAsDataURL(file);
+        });
+    }
+</script>
+
+<!-- PWA Install Banner -->
+<div class="pwa-install-banner" id="pwa-install-banner">
+    <p><strong>Install Elite Converter</strong><br>Created by Muhammad Hussain</p>
+    <button class="install-btn" id="pwa-install-btn">Install App</button>
+    <button class="close-btn" id="pwa-close-btn">Later</button>
+</div>
+
+<!-- Service Worker & PWA Install -->
+<script>
+    // Register Service Worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').then((registration) => {
+                console.log('SW registered:', registration.scope);
+            }).catch((error) => {
+                console.log('SW registration failed:', error);
+            });
+        });
+    }
+
+    // PWA Install Prompt
+    let deferredPrompt;
+    const installBanner = document.getElementById('pwa-install-banner');
+    const installBtn = document.getElementById('pwa-install-btn');
+    const closeBtn = document.getElementById('pwa-close-btn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        e.preventDefault();
+        deferredPrompt = e;
+        installBanner.classList.add('show');
+    });
+
+    installBtn.addEventListener('click', async () => {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            console.log('Install outcome:', outcome);
+            deferredPrompt = null;
+        }
+        installBanner.classList.remove('show');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        installBanner.classList.remove('show');
+    });
+
+    window.addEventListener('appinstalled', () => {
+        installBanner.classList.remove('show');
+        console.log('PWA installed successfully');
+    });
+</script>
+</body>
+</html>

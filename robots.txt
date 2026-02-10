@@ -1,0 +1,6 @@
+# robots.txt for PDF to Image & Image to PDF Converter
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://splendid-alfajores-be4087.netlify.app/sitemap.xml
