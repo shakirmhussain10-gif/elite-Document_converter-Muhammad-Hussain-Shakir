@@ -1,7 +1,29 @@
 "use client"
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useState, useRef } from "react"
 import { Upload, FileDown, ArrowLeft } from "lucide-react"
+
+async function loadMammoth(): Promise<any> {
+  return new Promise((resolve, reject) => {
+    if ((window as any).mammoth) {
+      resolve((window as any).mammoth)
+      return
+    }
+    const script = document.createElement("script")
+    script.src =
+      "https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.8.0/mammoth.browser.min.js"
+    script.onload = () => {
+      if ((window as any).mammoth) {
+        resolve((window as any).mammoth)
+      } else {
+        reject(new Error("Failed to load mammoth"))
+      }
+    }
+    script.onerror = () => reject(new Error("Failed to load mammoth script"))
+    document.head.appendChild(script)
+  })
+}
 
 export function WordToPdf({ onBack }: { onBack: () => void }) {
   const [file, setFile] = useState<File | null>(null)
@@ -25,7 +47,7 @@ export function WordToPdf({ onBack }: { onBack: () => void }) {
     setStatus("Converting Word to PDF...")
 
     try {
-      const mammoth = await import("mammoth")
+      const mammoth = await loadMammoth()
       const arrayBuffer = await file.arrayBuffer()
       const result = await mammoth.convertToHtml({ arrayBuffer })
       const htmlContent = result.value

@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react"
 import { Upload, FileDown, ArrowLeft, Type, Minus } from "lucide-react"
+import { loadPdfJs } from "@/lib/pdf-loader"
 
 export function EditPdf({ onBack }: { onBack: () => void }) {
   const [file, setFile] = useState<File | null>(null)
@@ -31,8 +32,7 @@ export function EditPdf({ onBack }: { onBack: () => void }) {
     setProcessing(true)
     setStatus("Loading PDF...")
     try {
-      const pdfjsLib = await import("pdfjs-dist")
-      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+      const pdfjsLib = await loadPdfJs()
 
       const arrayBuffer = await pdfFile.arrayBuffer()
       const pdf = await pdfjsLib.getDocument(arrayBuffer).promise

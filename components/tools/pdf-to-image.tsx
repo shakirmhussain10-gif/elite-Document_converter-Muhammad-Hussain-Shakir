@@ -2,6 +2,7 @@
 
 import { useState, useRef } from "react"
 import { Upload, ImageDown, ArrowLeft } from "lucide-react"
+import { loadPdfJs } from "@/lib/pdf-loader"
 
 export function PdfToImage({ onBack }: { onBack: () => void }) {
   const [file, setFile] = useState<File | null>(null)
@@ -27,8 +28,7 @@ export function PdfToImage({ onBack }: { onBack: () => void }) {
     setStatus("Extracting pages...")
 
     try {
-      const pdfjsLib = await import("pdfjs-dist")
-      pdfjsLib.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjsLib.version}/pdf.worker.min.js`
+      const pdfjsLib = await loadPdfJs()
 
       const arrayBuffer = await file.arrayBuffer()
       const pdf = await pdfjsLib.getDocument(arrayBuffer).promise
