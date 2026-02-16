@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     "PDF converter, Image to PDF, PDF to Word, Word to PDF, photo filters, B/W converter, ZIP creator, password protect, document tools",
   authors: [{ name: "Muhammad Hussain Shakir" }],
   manifest: "/manifest.json",
+  verification: {
+    google: "rD3v7YZmBXyaymcC4lkuGjiLnL4i1WvMs8arXoPuSiw",
+  },
 }
 
 export const viewport: Viewport = {
