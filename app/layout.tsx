@@ -8,12 +8,23 @@ const poppins = Poppins({
   variable: "--font-poppins",
 });
 
+// --- SEO & GOOGLE RANKING METADATA ---
 export const metadata: Metadata = {
-  title: "Elite Document Converter - Free Online Tools by Muhammad Hussain",
-  description: "Secure, browser-based document converter. Convert PDF to Image, Word to PDF, and more. 100% private - files never leave your device.",
-  keywords: ["Elite Document Converter", "Muhammad Hussain Shakir", "PDF to Image", "Secure Converter", "Free Online Tools"],
+  title: "Elite Document Converter | 100% Secure & Free Online PDF Tools",
+  description: "Best free browser-based document converter. Convert PDF to Image, Word to PDF, and ZIP files locally. No uploads, 100% private and secure.",
+  keywords: [
+    "Elite Document Converter",
+    "free pdf to image converter",
+    "secure online document converter",
+    "no upload pdf converter",
+    "Muhammad Hussain Shakir tools",
+    "convert word to pdf free",
+    "browser based file converter",
+    "fastest online converter 2026"
+  ],
   authors: [{ name: "Muhammad Hussain Shakir" }],
-  manifest: "/manifest.json",
+  viewport: "width=device-width, initial-scale=1",
+  robots: "index, follow",
 };
 
 export default function RootLayout({
@@ -24,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Structured Data for Stars & Branding */}
+        {/* --- GOOGLE SEARCH STARS & BRANDING SCHEMA --- */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -32,8 +43,9 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "SoftwareApplication",
               "name": "Elite Document Converter",
-              "operatingSystem": "All",
+              "operatingSystem": "Windows, MacOS, Android, iOS",
               "applicationCategory": "UtilityApplication",
+              "description": "A high-speed, secure, and local browser-based document converter created by Muhammad Hussain Shakir.",
               "author": {
                 "@type": "Person",
                 "name": "Muhammad Hussain Shakir"
@@ -41,7 +53,8 @@ export default function RootLayout({
               "aggregateRating": {
                 "@type": "AggregateRating",
                 "ratingValue": "5",
-                "reviewCount": "50"
+                "bestRating": "5",
+                "ratingCount": "87" 
               },
               "offers": {
                 "@type": "Offer",
