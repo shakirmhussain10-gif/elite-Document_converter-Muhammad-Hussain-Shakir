@@ -6,11 +6,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: 'weekly',
+      lastModified: new Date().toISOString(),
+      changeFrequency: 'daily',
       priority: 1,
     },
-    // Agar aap ne future mein /about ya /privacy pages banaye, 
-    // to wo bhi yahan isi tarah add ho jayenge.
   ]
 }
